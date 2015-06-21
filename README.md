@@ -129,8 +129,7 @@ Every React Natural application has 2 fundamental entrypoints:
 If you want to add server side routes you can simply edit `server.jsx` following [express](https://github.com/strongloop/express) documentation.
 
 ##I would've made it differently!
-Almost everything is customizable in React Natural, if you feel the need to change the client
-Just check out the docs for the original one and make your own version.
+Almost everything is customizable in React Natural: if you feel the need to change the client just check out the docs for the original one and make your own version.
 [React Natural](http://github.com/framp/react-natural/) is so small you'll probably understand the code in the time it takes you to drink a coffee.
 
 ##Coffee
