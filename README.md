@@ -3,7 +3,7 @@ React Natural Starter
 
 The simplest framework to build your isomorphic application.
 
-Standing on the shoulders of giants like [React](http://facebook.github.io/react/) and [React-Router](https://github.com/rackt/react-router), React Natural gives you a simple set of conventions to build your application.
+Standing on the shoulders of giants like [React](http://facebook.github.io/react/) and [React Router](https://github.com/rackt/react-router), [React Natural](https://github.com/framp/react-natural) gives you a simple set of conventions to build your application.
 
 ##How to start
 Simply clone the official starter project (aka this repo) and install dependencies:
