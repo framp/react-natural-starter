@@ -120,13 +120,6 @@ You just have to respect 2 rules:
   
 The `{'{body}'}` string will be replaced with the components defined in your pages
 
-##Generating a client for production
-Before going live with your rad application you need to generate an optimized client library for your application
-
-    npm run build
-    
-This will generate a file `public/js/app.js` - which is automatically used by the default `Template`.
-
 ##Advanced edits
 Every React Natural application has 2 fundamental entrypoints:
 
