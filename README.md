@@ -9,8 +9,8 @@ Standing on the shoulders of giants like [React](http://facebook.github.io/react
 Simply clone the official starter project (aka this repo) and install dependencies:
 
     git clone https://github.com/framp/react-natural-starter.git
-    npm start
-    #TODO add file watcher and automatic reloader
+    npm install
+    npm run watch
 
 Congratulations, you're now running an isomorphic application!
 
@@ -119,6 +119,13 @@ You just have to respect 2 rules:
   - Don't remove the pre-existing scripts (or you'll lose your client-side React)
   
 The `{'{body}'}` string will be replaced with the components defined in your pages
+
+##Generating a client for production
+Before going live with your rad application you need to generate an optimized client library for your application
+
+    npm run build
+    
+This will generate a file `public/js/app.js` - which is automatically used by the default `Template`.
 
 ##Advanced edits
 Every React Natural application has 2 fundamental entrypoints:

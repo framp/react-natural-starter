@@ -6,9 +6,9 @@ let routes = require('./routes')
 client(routes)
 
 },{"./node_modules/react-natural/client":2,"./routes":8}],2:[function(require,module,exports){
-var React = (window.React)
-var Router = (window.ReactRouter)
-
+(function (global){
+var React = (typeof window !== "undefined" ? window.React : typeof global !== "undefined" ? global.React : null)
+var Router = (typeof window !== "undefined" ? window.ReactRouter : typeof global !== "undefined" ? global.ReactRouter : null)
 require('whatwg-fetch')
 
 module.exports = function(routes, options) {
@@ -17,7 +17,6 @@ module.exports = function(routes, options) {
     location.reload()
   }
   options.prefix = options.prefix || '/api'
-  
   document.addEventListener('DOMContentLoaded', function() { 
     Router.run(routes, Router.HistoryLocation, function (Handler, state) {
       var container = document.body
@@ -38,6 +37,7 @@ module.exports = function(routes, options) {
   })
 }
 
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"whatwg-fetch":3}],3:[function(require,module,exports){
 (function() {
   'use strict';
@@ -371,9 +371,10 @@ module.exports = function(routes, options) {
 })();
 
 },{}],4:[function(require,module,exports){
+(function (global){
 'use strict'
-let React = (window.React)
-let Link = (window.ReactRouter).Link
+let React = (typeof window !== "undefined" ? window.React : typeof global !== "undefined" ? global.React : null)
+let Link = (typeof window !== "undefined" ? window.ReactRouter : typeof global !== "undefined" ? global.ReactRouter : null).Link
 
 module.exports = React.createClass({displayName: "exports",
   getInitialState: function() {
@@ -394,10 +395,12 @@ module.exports = React.createClass({displayName: "exports",
   }
 })
 
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],5:[function(require,module,exports){
+(function (global){
 'use strict'
-let React = (window.React)
-let Link = (window.ReactRouter).Link
+let React = (typeof window !== "undefined" ? window.React : typeof global !== "undefined" ? global.React : null)
+let Link = (typeof window !== "undefined" ? window.ReactRouter : typeof global !== "undefined" ? global.ReactRouter : null).Link
 
 module.exports = React.createClass({displayName: "exports",
   getInitialState: function() {
@@ -424,10 +427,12 @@ module.exports = React.createClass({displayName: "exports",
   }
 })
 
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],6:[function(require,module,exports){
+(function (global){
 'use strict'
-let React = (window.React)
-let Link = (window.ReactRouter).Link
+let React = (typeof window !== "undefined" ? window.React : typeof global !== "undefined" ? global.React : null)
+let Link = (typeof window !== "undefined" ? window.ReactRouter : typeof global !== "undefined" ? global.ReactRouter : null).Link
 
 module.exports = React.createClass({displayName: "exports",
   getInitialState: function() {
@@ -448,11 +453,13 @@ module.exports = React.createClass({displayName: "exports",
   }
 })
 
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],7:[function(require,module,exports){
+(function (global){
 'use strict'
-let React = (window.React)
-let Link = (window.ReactRouter).Link
-let Form = (window.ReactRouterForm)
+let React = (typeof window !== "undefined" ? window.React : typeof global !== "undefined" ? global.React : null)
+let Link = (typeof window !== "undefined" ? window.ReactRouter : typeof global !== "undefined" ? global.ReactRouter : null).Link
+let Form = (typeof window !== "undefined" ? window.ReactRouterForm : typeof global !== "undefined" ? global.ReactRouterForm : null)
 
 module.exports = React.createClass({displayName: "exports",
   getInitialState: function() {
@@ -484,10 +491,12 @@ module.exports = React.createClass({displayName: "exports",
   }
 })
 
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],8:[function(require,module,exports){
+(function (global){
 'use strict'
-let React = (window.React)
-let Router = (window.ReactRouter)
+let React = (typeof window !== "undefined" ? window.React : typeof global !== "undefined" ? global.React : null)
+let Router = (typeof window !== "undefined" ? window.ReactRouter : typeof global !== "undefined" ? global.ReactRouter : null)
 
 let DefaultRoute = Router.DefaultRoute
 let NotFoundRoute = Router.NotFoundRoute
@@ -500,4 +509,5 @@ module.exports = [
   React.createElement(Route, {name: "search", path: "/search", handler: require('./pages/search/view')})
 ] 
 
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./pages/root/view":4,"./pages/search/view":5,"./pages/song/view":6,"./pages/songs/view":7}]},{},[1]);
